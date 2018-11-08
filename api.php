@@ -18,8 +18,16 @@ $app -> get("/productos", function() use ($db,$app){
     echo '{"status":"success","message":null,"data":'.json_encode($productos).'}';
 });
 
-$app ->post("productos", function () use ($db, $app) {
-    $insert = $db->query("INSERT INTO productos VALUES (null, ".$name.", ".$description.", ".$price.")");
+$app ->post("/productos", function () use ($db, $app) {
+    $insert = $db->query("INSERT INTO productos VALUES (null, "
+                                                        .$app->request->post("name").", "
+                                                        .$app->request->post("description").", "
+                                                        .$app->request->post("price").");");
+    if($insert){
+        echo '{"status":"success","message":"Producto creado exitosamente","data":"[]"}';
+    }else{
+        echo '{"status":"failed","message":"Ocurrio un error en la solicitud, vuelve a intentar...","data":"[]"}';
+    }
 });
 
 $app -> run();
