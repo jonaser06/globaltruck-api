@@ -1,14 +1,12 @@
 <?php
-$servername = "localhost";
-$database = "gt";
-$username = "admin";
-$password = "";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
-mysqli_close($conn);
-?>
+//require 'config.php';
+require_once '../vendor/autoload.php';
+
+\Slim\Slim::registerAutoloader();
+$app = new \Slim\Slim();
+
+$app->get("/saludo/:name",function ($name){
+    echo "Hola ".$name;
+});
+
+$app->run();
