@@ -70,6 +70,21 @@ header{
 }
 .slider{
     height:400px;
-    width: 100%;
-    background: #ccc;
+    width: 100% !important;
+    background: #c3c3c3;
 }
+.slidesjs-control{
+    width: 100% !important;
+}
+.slidesjs-container{
+    width: 100% !important;
+    height: 400px !important;
+}
+.slidesjs-slide{
+    height: 400px;
+    width: 100% !important;
+}
+.slidesjs-pagination{
+    display: none;
+}
+.slidesjs-control
