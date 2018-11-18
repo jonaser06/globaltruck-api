@@ -13,7 +13,7 @@ $(document).ready(function(){
     banner.padre.css({
       'height' : alto + 'px'
     });
-    console.log(alto);
+    //console.log(alto);
   }
   altobanner();
   $(window).resize(function(){
@@ -21,6 +21,8 @@ $(document).ready(function(){
   });
 //  console.log(banner.numeroSlides);
 
+
+  /**btn next */
   $('#banner-next').click(function(e){
 
     e.preventDefault();
@@ -52,6 +54,45 @@ $(document).ready(function(){
         'left' : 0
       });
       banner.position = 1;
+    }
+
+  });
+
+  /**btn next */
+  $('#banner-prev').click(function(e){
+
+    e.preventDefault();
+
+    if(banner.position > 1){
+
+      banner.padre.children().not('.active').css({
+        'left' : '-100%'
+      });
+
+      $('#banner .active').animate({
+        'left' : '100%'
+      });
+
+      $('#banner .active').removeClass('active').prev().addClass('active').animate({
+        'left' : 0
+      });
+      
+      banner.position = banner.position - 1;
+    }else{
+      banner.padre.children().not('.active').css({
+        'left' : '-100%'
+      });
+
+      $('#banner .active').animate({
+        'left' : '100%'
+      });
+
+
+      $('#banner .active').removeClass('active');
+      banner.padre.children('.slide').last().addClass('active').animate({
+        'left' : 0
+      });
+      banner.position = banner.numeroSlides;
     }
 
   });
