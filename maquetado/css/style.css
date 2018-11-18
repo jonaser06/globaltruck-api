@@ -68,23 +68,41 @@ header{
     border-radius: 5px;
     color: #fff;
 }
+
+/** slider **/ 
 .slider{
-    height:400px;
-    width: 100% !important;
-    background: #c3c3c3;
+    overflow: hidden;
+    position: relative;
+    
 }
-.slidesjs-control{
-    width: 100% !important;
+.slider #banner{
+    position: relative;
+    width: 100%;
 }
-.slidesjs-container{
-    width: 100% !important;
-    height: 400px !important;
+.slider #banner img{
+    vertical-align: top;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
 }
-.slidesjs-slide{
-    height: 400px;
-    width: 100% !important;
+.slider .flecha-banner{
+    font-size: 20px;
+    height: 60px;
+    width: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+    position: absolute;
+    top: 43%;
 }
-.slidesjs-pagination{
-    display: none;
+.slider .flecha-banner:hover{
+    color: rgba(0, 0, 0, 1);
 }
-.slidesjs-control
+.slider .anterior{
+    left:0px;
+}
+.slider .siguiente{
+    right:0px;
+}

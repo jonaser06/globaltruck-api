@@ -7,7 +7,6 @@
     <title>Globaltruck</title>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.slides.min.js"></script>
     <script src="js/slider.js"></script>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -58,13 +57,14 @@
         </div>
     </div>
     <div class="slider">
-        <div id="slides">
-            <img src="img/slide1.png">
-            <img src="img/slide1.png">
-            <img src="img/slide1.png">
-            <img src="img/slide1.png">
-            <img src="img/slide1.png">
+        <div class="slides" id="banner">
+            <img class="slide active" src="img/slide1.png">
+            <img class="slide" src="img/slide1.png">
+            <img class="slide" src="img/slide1.png">
+            <img class="slide" src="img/slide1.png">
         </div>
+        <a href="#" id="banner-prev" class="flecha-banner anterior"><span class="fa fa-chevron-left"></span></a>
+        <a href="#" id="banner-next" class="flecha-banner siguiente"><span class="fa fa-chevron-right"></span></a>
     </div>
 </body>
 </html>
