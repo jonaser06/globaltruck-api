@@ -13,6 +13,9 @@ $(document).ready(function(){
     banner.padre.animate({
       'height' : alto + 'px'
     });
+    $('.slide').animate({
+      'height' : alto + 'px'
+    });
     //console.log(alto);
   }
 
