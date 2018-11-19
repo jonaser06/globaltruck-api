@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var banner = {
-    padre: $('#banner'),
-    numeroSlides : $('#banner').children('.slide').length,
+    padre: $('.info'),
+    numeroSlides : $('.info').children('.slide').length,
     position : 1
   }
   banner.padre.children('.slide').first().css({
@@ -9,17 +9,18 @@ $(document).ready(function(){
   });
   
   var altobanner = function(){
-    var alto = banner.padre.children('.slide').outerHeight();
-    banner.padre.css({
+    var alto = banner.padre.children('.active').outerHeight();
+    banner.padre.animate({
       'height' : alto + 'px'
     });
     //console.log(alto);
   }
+
   altobanner();
   $(window).resize(function(){
     altobanner();
   });
-//  console.log(banner.numeroSlides);
+
 
 
   /**btn next */
@@ -86,8 +87,6 @@ $(document).ready(function(){
       $('#banner .active').animate({
         'left' : '100%'
       });
-
-
       $('#banner .active').removeClass('active');
       banner.padre.children('.slide').last().addClass('active').animate({
         'left' : 0
@@ -96,5 +95,6 @@ $(document).ready(function(){
     }
 
   });
+  
 
 });
