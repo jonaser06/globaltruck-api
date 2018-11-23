@@ -99,7 +99,7 @@ header{
     top: 0;
     left: 50%;
 }*/
-.slider .flecha-banner{
+.flecha-banner{
     font-size: 20px;
     height: 60px;
     width: 30px;
@@ -110,13 +110,13 @@ header{
     position: absolute;
     top: 43%;
 }
-.slider .flecha-banner:hover{
+.flecha-banner:hover{
     color: rgba(0, 0, 0, 1);
 }
-.slider .anterior{
+.anterior{
     left:0px;
 }
-.slider .siguiente{
+.siguiente{
     right:0px;
 }
 .slide img{
@@ -163,6 +163,25 @@ header{
     box-sizing: border-box;
     overflow: hidden;
     background: #d8e9f0;
+    text-align: center;
+}
+.categoria-slider h1{
+ text-align: left;
+}
+.box{
+    position: relative;
+    height: 220px;
+    width: 90%;
+    display: inline-block;
+    overflow: hidden;
+}
+.container-item{
+    position: relative;
+    float: left;
+    height: 220px;
+    width: 1425px;
+    overflow: hidden;
+    left: 0px;
 }
 .categoria-slider .item{
     float: left;
@@ -285,45 +304,35 @@ header{
 .ads-image{
     padding: 0px;
 }
-.products-fluid{
-    width: 100%;
-    height: 1680px;
-    background: #e5e5e5;
-}
 .product-item{
-    background: #fff;
-    height: 450px;
+    margin-bottom: 30px;
+    width: 350px;
     border: 1px solid #ccc;
-}
-.product-item img{
-    width: 100%;
-    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    height: 450px;
 }
 .product-description{
-    width: 100%;
-    text-align: center;
-}
-.product-price{
-    position: relative;
-    width: 50%;
-    height: 30px;
-    line-height: 30px;
-    float: left;
     text-align: center;
     font-family: "Open Sans";
     font-weight: bold;
 }
-.bottom-buy{
-    display: block;
+.product-price{
     position: relative;
-    width: 40%;
-    height: 30px;
-    line-height: 30px;
-    background: #f33535;
-    border: 1px solid #f33535;
-    float: right;
-    margin-right: 5%;
+    float: left;
     text-align: center;
-    border-radius: 5px;
+    width: 50%;
+    margin-top: 25px;
+}
+.bottom-buy{
+    position: relative;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    width: 40%;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 30px;
+    background: #f33535;
     color: #fff;
+    border-radius: 5px;
 }
