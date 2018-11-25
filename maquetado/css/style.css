@@ -1,4 +1,5 @@
 header{
+    position: relative;
     height: 30px;
     width: 100%;
     line-height: 30px;
@@ -281,23 +282,32 @@ header{
     background: #d8e9f0;
     box-sizing: border-box;
 }
-.ads-banner{
-    width: 100%;
-    height: 150px;
+.block-ads{
     background: #666;
+    height: 150px;
+    padding: 0px !important;
+    overflow: hidden;
 }
-.promotion{
-    width: 100%;
-    height: 100%;
+.ads-promotion{
+    position: relative;
+    float: left;
     background: #009045;
+    width: 50%;
+    height: 100%;
     text-align: center;
 }
-.promotion h1{
+.ads-image{
+    position: relative;
+    float: right;
+    width: 50%;
+}
+.ads-promotion h1{
     margin-top: 30px;
     text-align: center;
     color: #fff;
 }
-.promotion .ads-bottom{
+
+.ads-promotion .ads-bottom{
     display: inline-block;
     width: 160px;
     height: 40px;
@@ -355,7 +365,10 @@ header{
 .footer{
     width: 100%;
     height: 50px;
-    background: #f7f5f5;
+    background: #fff;
+    -webkit-box-shadow: 0px -1px 3px 0px rgba(170, 170, 170, 0.5);
+    -moz-box-shadow: 0px -1px 3px 0px rgba(170, 170, 170, 0.5);
+    box-shadow: 0px -1px 3px 0px rgba(170, 170, 170, 0.5);
     overflow: hidden;
 }
 .footer-option ul, .copyright ul li{
@@ -378,4 +391,118 @@ header{
 }
 .copyright ul li a{
     color: #33425b;
+}
+.result-search{
+    background: #f7f5f5;
+}
+.container-result{
+    background: #fff;
+    text-align: center;
+}
+.result-details{
+    width: 95%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+}
+.number-result{
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 15px;
+    line-height: 50px;
+}
+.filter{
+    position: relative;
+    top: 13px;
+    float: right;
+    width: 40%;
+}
+.filter .filter-order{
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+.filter .cbox-filter{
+    position: relative;
+    float: right;
+    width: 47%;
+    margin-left: 5px;
+}
+.result-item{
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+    width: 95%;
+    height: 240px;
+    border-bottom: 1px solid #ccc;
+}
+.result-item:last-child{
+    border-bottom: 1px solid #fff;
+}
+.item-image{
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    width: 21.5%;
+    height: 93%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.item-image img{
+    width: 100%;
+    height: 100%;
+}
+.search-item-details{
+    position: relative;
+    float: right;
+    width: 75%;
+    height: 93%;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.search-item-details p{
+    font-size: 20px;
+}
+.search-item-details .price p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.search-item-details .bottom-buy{
+    float: left;
+    width: 200px;
+    height: 43px;
+    line-height: 43px;
+}
+.paginator{
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.paginator ul{
+    display: inline-block;
+}
+
+.paginator ul li {
+    float: left;
+    list-style: none;
+    margin-right: 4px;
+}
+.paginator ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 20px;
+    color: #33425b;
+}
+.paginator ul li:first-child a{
+    color: #000;
+}
+.pag{
+    background: #f7f5f5;   
 }
