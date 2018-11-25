@@ -506,3 +506,23 @@ header{
 .pag{
     background: #f7f5f5;   
 }
+.product-detail{
+    background: #f7f5f5; 
+}
+.product-bg{
+    background: #fff;
+}
+.product-detail-image{
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.product-top{
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+.product-detail-description{
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f7f5f5; 
+    font-size: 14px;
+}
