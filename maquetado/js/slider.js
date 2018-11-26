@@ -117,6 +117,26 @@ $(document).ready(function(){
       });
     }
   });
+
+  $('.slick-right').click(function(e){
+    e.preventDefault();
+    if(posicion > -95){
+      posicion = posicion - 95;
+      $('.slick-win').animate({
+        'left' : posicion+'px'
+      });
+    }
+  });
+
+  $('.slick-left').click(function(e){
+    e.preventDefault();
+    if(posicion < 0){
+      posicion = posicion + 95;
+      $('.slick-win').animate({
+        'left' : posicion+'px'
+      });
+    }
+  });
   
 
 });

@@ -362,6 +362,102 @@ header{
     color: #fff;
     border-radius: 5px;
 }
+.payment{
+    position: relative;
+    float: right;
+    width: 40%;
+    margin-top: 20px;
+    
+}
+.section-lastest-product{
+    height: 450px;
+    background: #f7f5f5;
+}
+.lastest-product{
+    padding: 0px;
+    height: 318px;
+    background: #fff;
+}
+.container-product{
+    
+    padding-top: 4%;
+}
+.iner-title{
+    font-size: 15px;
+    overflow: hidden;
+}
+.iner-item{
+    height: 318px;
+    background: #f7f5f5;
+}
+.iner-price{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.iner-item img{
+    width: 255px;
+    height: 255px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.iner-content{
+    width: 255px;
+    height: 63px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    border-top: 0px !important;
+    border: 1px solid #ccc;
+}
+.slick{
+    margin-left: 65px;
+}
+.slick-win ul li img{
+    width: 100%;
+    height: 100%;
+}
+.slick-win{
+    position: relative;
+    left: 0;
+    display: inline-block;
+    width: 500px;
+    height: 95px;
+}
+.slick-win ul li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+}
+.slick-win ul{
+    float: left;
+    padding: 0px;
+}
+.slick-container{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    height: 95px;
+    width: 350px;
+    overflow: hidden;
+}
+.slick-left, .slick-right{
+    position: relative;
+    top: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.slick-left{
+    left: 5px;
+}
+.slick-right{
+    left: 375px;  
+}
 .footer{
     width: 100%;
     height: 5%;
@@ -512,10 +608,19 @@ header{
 }
 .product-bg{
     background: #fff;
+    height: 620px;
+    border: 1px solid #ccc;
 }
 .product-detail-image{
+    position: relative;
+    width: 415px;
+    height: 415px;
     border: 1px solid #ccc;
-    overflow: hidden;
+}
+.product-detail-image img{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 .product-top{
     padding-top: 90px;
