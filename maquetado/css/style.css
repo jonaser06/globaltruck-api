@@ -639,8 +639,8 @@ header{
 }
 .login-logo{
     display: inline-block;
-    width: 163px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     margin-top: 45px;
 }
 .login-logo img{
@@ -651,7 +651,7 @@ header{
     font-family: 'Open Sans';
     font-weight: bold;
     color: #000;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center
 }
 .login-form{
@@ -685,11 +685,11 @@ header{
     border-bottom: 1px solid #ccc;
 }
 .disclaimer{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 90%;
     text-align: left;
     margin-left: 6%;
-    font-size: 19.5px;
+    font-size: 15px;
 }
 .button-singin{
     margin-top: 20px;
@@ -708,7 +708,7 @@ header{
 .backtologin{
     text-align: left;
     margin-left: 6%;
-    font-size: 19.5px;
+    font-size: 15px;
 }
 .button-create{
     margin-top: 20px;
@@ -722,10 +722,9 @@ header{
 .signup-form{
     display: inline-block;
     width: 500px;
-    height: 460px;
+    height: 380px;
     border: 1px solid #ccc;
-    padding-top: 10px;
-    box-sizing: border-box;
+
 }
 .name{
     position: relative;
